@@ -128,8 +128,6 @@ While hardware testing has not been conducted on the system yet, the code has be
 ## <div style="text-align: center"> Conclusion </div>
 <div style="text-align: justify">
 
-## Conclusion
-
 In the culmination of this project, we've crafted a miniature desktop robot with expressive facial features, wirelessly controlled via an ESP32 board and freeRTOS. Leveraging tools like 3D printing, Arduino, and Android Studio, we've embarked on a journey marked by innovation and creativity.
 
 While unforeseen circumstances impacted our ability to conduct timely hardware testing, we acknowledge this limitation. The project timeline has not been met, and as a result, we cannot assert the complete achievement of our objectives and requirements.
