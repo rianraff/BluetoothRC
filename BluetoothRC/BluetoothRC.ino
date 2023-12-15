@@ -57,7 +57,7 @@ void dispTask(void *pvParameters) {
           if(aninum ==0)//animation number 0 for rest.
           {  //Serial.println("right");
              //blink_eyes(1000,1);
-             sad_blink(400,1);
+             blink_eyes(400,1);
           }
          // vTaskDelete(xHandle);
            //vTaskSuspend( NULL );
