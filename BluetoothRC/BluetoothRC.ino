@@ -66,7 +66,7 @@ void dispTask(void *pvParameters) {
 }
 
 void setup() {
-      //Motor drivers pins
+  //Motor drivers pins
   pinMode(PWM1,OUTPUT);
   pinMode(AIN1,OUTPUT);
   pinMode(AIN2,OUTPUT);
@@ -129,29 +129,24 @@ void loop() {
   
   Plzgetstring(PhrasedData);// Get the incoming data and seprerate the commands into array.
   Speed = (String(CommandArray [1])).toInt();//Speed of the robot
-  if(String(CommandArray [0])=="f"|| String(CommandArray [0])=="F")
-{
- forward(PWM1,AIN1,AIN2,PWM2,BIN1,BIN2,Speed); 
-}
-if(String(CommandArray [0])=="b"|| String(CommandArray [0])=="B")
-{
- backward(PWM1,AIN1,AIN2,PWM2,BIN1,BIN2,Speed); 
-}
-if(String(CommandArray [0])=="L"|| String(CommandArray [0])=="l")
-{
- left(PWM1,AIN1,AIN2,PWM2,BIN1,BIN2,Speed);
- aninum=1;
-}
-if(String(CommandArray [0])=="R"|| String(CommandArray [0])=="r")
-{
- right(PWM1,AIN1,AIN2,PWM2,BIN1,BIN2,Speed);
- aninum=2;
-}
-if(String(CommandArray [0])=="S" || String(CommandArray [0])=="s")
-{
- aninum=0;
- Stop(PWM1,AIN1,AIN2,PWM2,BIN1,BIN2,Speed);
-} 
+  if(String(CommandArray [0])=="f"|| String(CommandArray [0])=="F"){
+    forward(PWM1,AIN1,AIN2,PWM2,BIN1,BIN2,Speed); 
+  }
+  if(String(CommandArray [0])=="b"|| String(CommandArray [0])=="B"){
+    backward(PWM1,AIN1,AIN2,PWM2,BIN1,BIN2,Speed); 
+  }
+  if(String(CommandArray [0])=="L"|| String(CommandArray [0])=="l"){
+    left(PWM1,AIN1,AIN2,PWM2,BIN1,BIN2,Speed);
+    aninum=1;
+  }
+  if(String(CommandArray [0])=="R"|| String(CommandArray [0])=="r"){
+    right(PWM1,AIN1,AIN2,PWM2,BIN1,BIN2,Speed);
+    aninum=2;
+  }
+  if(String(CommandArray [0])=="S" || String(CommandArray [0])=="s"){
+    aninum=0;
+    Stop(PWM1,AIN1,AIN2,PWM2,BIN1,BIN2,Speed);
+  } 
 }
 
 void Plzgetstring(String phraseData)
